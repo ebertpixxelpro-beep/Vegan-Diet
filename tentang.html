@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Tentang Kami | Vegan Diet Premium Organic Olive Oil</title>
+    
+    <meta name="description" content="Pelajari dedikasi Vegan Diet dalam menghadirkan Minyak Zaitun Organik terbaik. Sejarah kami, komitmen kualitas, dan tim ahli di balik produk kesehatan premium.">
+    <meta name="keywords" content="Tentang Vegan Diet, Sejarah Minyak Zaitun, Komitmen Organik, Tim Ahli Gizi, Visi Misi Hidup Sehat">
+    <meta name="author" content="Expert Web Developer">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0a0a">
+    
+    <meta property="og:title" content="Tentang Vegan Diet - Dedikasi untuk Kesehatan Anda">
+    <meta property="og:description" content="Kami bukan sekadar menjual produk, kami menawarkan gaya hidup sehat melalui nutrisi nabati terbaik.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1541449748-0387e74360e5?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/732/732200.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Vegan Diet Premium",
+        "foundingDate": "2010",
+        "description": "Pelopor gaya hidup vegan dan penyedia minyak zaitun organik premium di Indonesia.",
+        "logo": "https://cdn-icons-png.flaticon.com/512/732/732200.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+6281234567890",
+          "contactType": "customer service"
+        }
+      }
+    }
+    </script>
+
+    <style>
+        /* CSS SAMA DENGAN INDEX UNTUK KONSISTENSI */
+        :root {
+            --primary-green: #8CC63F;
+            --bg-dark: #0a0a0a;
+            --bg-secondary: #111111;
+            --bg-card: #1a1a1a;
+            --text-white: #ffffff;
+            --text-light: #f0f0f0;
+            --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: var(--font-sans);
+            overflow-x: hidden;
+            line-height: 1.8;
+        }
+
+        h1, h2, h3, h4, h5 { font-family: var(--font-serif); color: var(--text-white); }
+        .section-padding { padding: 100px 0; }
+        .bg-darker { background-color: #050505; }
+        
+        .section-subtitle {
+            display: inline-block;
+            color: var(--primary-green);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--primary-green);
+            padding-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .section-title { font-size: 3rem; margin-bottom: 1.5rem; }
+
+        /* --- NAVBAR (FIXED & MOBILE READY) --- */
+        .navbar {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-family: var(--font-serif);
+            color: var(--text-white) !important;
+        }
+        .navbar-brand span { color: var(--primary-green); }
+        .nav-link {
+            color: #e0e0e0 !important;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin: 0 10px;
+            position: relative;
+        }
+        .nav-link:hover, .nav-link.active { color: var(--primary-green) !important; }
+        
+        /* Navbar Toggler Fix */
+        .navbar-toggler { border: 1px solid var(--primary-green); }
+        .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(140, 198, 63, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+        .btn-primary-custom {
+            background: var(--primary-green);
+            color: #000;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            border: 2px solid var(--primary-green);
+            transition: 0.4s;
+        }
+
+        .fab-wrapper {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .fab-btn {
+            width: 60px; height: 60px;
+            border-radius: 50%;
+            display: flex; justify-content: center; align-items: center;
+            font-size: 28px; color: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .fab-wa { background: #25D366; }
+        .fab-top { background: var(--primary-green); display: none; }
+
+        /* ABOUT SPECIFIC STYLE */
+        .stat-box {
+            padding: 30px;
+            background: var(--bg-card);
+            border-radius: 15px;
+            border-left: 4px solid var(--primary-green);
+        }
+
+        .vision-card {
+            background: var(--bg-secondary);
+            padding: 40px;
+            border-radius: 20px;
+            height: 100%;
+            border: 1px solid #333;
+        }
+
+        @media (max-width: 768px) {
+            .section-title { font-size: 2.2rem; }
+            .section-padding { padding: 60px 0; }
+        }
+    </style>
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">VEGAN<span>DIET</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Paket
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-lg" aria-labelledby="shopDropdown">
+                            <li><a class="dropdown-item py-2" href="paket1.html">Family Pack</a></li>
+                            <li><a class="dropdown-item py-2" href="paket2.html">Healthy Habit</a></li>
+                            <li><a class="dropdown-item py-2" href="paket3.html">Starter Pack</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="#contact" class="btn btn-primary-custom px-4 py-2" style="font-size: 0.8rem;">Hubungi Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="section-padding bg-darker" style="padding-top: 180px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="section-subtitle">Siapa Kami</span>
+                    <h1 class="section-title">Dedikasi Untuk <br> Nutrisi Murni</h1>
+                    <p class="lead">Lebih dari sekadar brand, Vegan Diet adalah gerakan untuk mengembalikan manusia ke pola makan alami yang menyehatkan.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1466632311177-03554483957d?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow-lg" alt="Organic Farming">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="stat-box">
+                        <h2 class="text-success mb-0">2010</h2>
+                        <p class="mb-0">Tahun Didirikan</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-box">
+                        <h2 class="text-success mb-0">50+</h2>
+                        <p class="mb-0">Petani Mitra</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-box">
+                        <h2 class="text-success mb-0">100%</h2>
+                        <p class="mb-0">Jaminan Organik</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h3 class="mb-4">Perjalanan Kami</h3>
+                    <p>Dimulai dari sebuah kebun kecil di pinggiran kota, kami melihat betapa sulitnya menemukan sumber lemak sehat yang benar-benar murni tanpa campuran kimia. Itulah yang mendorong kami untuk mencari sumber Minyak Zaitun terbaik langsung dari asalnya dan membawanya ke meja makan Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-darker">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="vision-card">
+                        <i class="fas fa-eye text-success fs-1 mb-4"></i>
+                        <h3>Visi Kami</h3>
+                        <p>Menjadi pemimpin global dalam penyediaan produk berbasis tanaman yang berkelanjutan dan meningkatkan angka harapan hidup masyarakat melalui nutrisi yang tepat.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="vision-card">
+                        <i class="fas fa-bullseye text-success fs-1 mb-4"></i>
+                        <h3>Misi Kami</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Mengedukasi masyarakat tentang manfaat diet vegan.</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Mempertahankan standar kualitas organik tertinggi.</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Mendukung praktik pertanian ramah lingkungan.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-subtitle">Para Ahli</span>
+                <h2 class="section-title">Di Balik Kualitas Kami</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3 border border-success p-2" width="150" alt="Founder">
+                        <h5>Dr. Adrian Wijaya</h5>
+                        <p class="text-success small">Founder & Nutritionist</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3 border border-success p-2" width="150" alt="QC Expert">
+                        <h5>Sarah Angelina</h5>
+                        <p class="text-success small">Quality Control Expert</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="https://randomuser.me/api/portraits/men/33.jpg" class="rounded-circle mb-3 border border-success p-2" width="150" alt="Agronomist">
+                        <h5>Budi Santoso</h5>
+                        <p class="text-success small">Senior Agronomist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black pt-5 border-top border-secondary">
+        <div class="container pb-5">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="mb-3 text-white">VEGAN<span class="text-success">DIET</span>.</h3>
+                    <p class="text-secondary small">Meningkatkan kualitas hidup melalui produk organik berkualitas tinggi.</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Navigasi</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-secondary small">Beranda</a></li>
+                        <li><a href="about.html" class="text-secondary small">Tentang</a></li>
+                        <li><a href="galeri.html" class="text-secondary small">Galeri</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Email Anda">
+                        <button class="btn btn-success">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3 border-top border-secondary">
+            <small class="text-secondary">&copy; 2026 Vegan Diet Official. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    <div class="fab-wrapper">
+        <a href="#" id="backToTop" class="fab-btn fab-top"><i class="fas fa-arrow-up"></i></a>
+        <a href="https://wa.me/6281234567890" target="_blank" class="fab-btn fab-wa"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { backToTopBtn.style.display = 'flex'; } 
+            else { backToTopBtn.style.display = 'none'; }
+        });
+    </script>
+</body>
+</html>

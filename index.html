@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Vegan Diet | Premium Organic Olive Oil & Healthy Lifestyle</title>
+    
+    <meta name="description" content="Pusat Diet Vegan & Minyak Zaitun Organik Terlengkap. Dapatkan Extra Virgin Olive Oil Premium, panduan diet, dan konsultasi ahli gizi. 100% Alami & Teruji Klinis.">
+    <meta name="keywords" content="Minyak Zaitun, Diet Vegan, Makanan Sehat, Organik, Extra Virgin Olive Oil, Resep Vegan, Hidup Sehat, Kolesterol, Jantung Sehat">
+    <meta name="author" content="Expert Web Developer">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Vegan Diet Premium - Solusi Sehat Alami">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1474979266404-7cadd259c308?auto=format&fit=crop&w=1200&q=80">
+    
+    <link rel="canonical" href="https://www.vegandiet-official.com">
+
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/732/732200.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Vegan Diet Premium Store",
+      "image": "https://images.unsplash.com/photo-1474979266404-7cadd259c308",
+      "description": "Penyedia Minyak Zaitun Organik dan Produk Vegan Premium.",
+      "telephone": "+6281234567890",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Sehat Makmur No. 88",
+        "addressLocality": "Jakarta",
+        "addressCountry": "ID"
+      }
+    }
+    </script>
+
+    <style>
+        /* --- CUSTOM VARIABLES --- */
+        :root {
+            --primary-green: #8CC63F; /* Hijau Segar */
+            --primary-hover: #7ab332;
+            --bg-dark: #0a0a0a;
+            --bg-secondary: #111111;
+            --bg-card: #1a1a1a;
+            --text-white: #ffffff;
+            --text-light: #f0f0f0; /* Pengganti abu-abu, hampir putih */
+            --gold-accent: #D4AF37;
+            --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Poppins', sans-serif;
+        }
+
+        /* --- GLOBAL RESET & TYPOGRAPHY --- */
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: var(--font-sans);
+            overflow-x: hidden; /* Mencegah scroll samping di HP */
+            line-height: 1.8;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-serif);
+            color: var(--text-white);
+            font-weight: 700;
+        }
+
+        p {
+            color: #dcdcdc; /* Tulisan terang, bukan abu-abu gelap */
+            margin-bottom: 1.5rem;
+        }
+
+        a { text-decoration: none; transition: all 0.3s ease; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        /* --- UTILITIES --- */
+        .section-padding { padding: 100px 0; }
+        .text-gradient {
+            background: linear-gradient(to right, var(--primary-green), #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-darker { background-color: #050505; }
+        
+        .section-subtitle {
+            display: inline-block;
+            color: var(--primary-green);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--primary-green);
+            padding-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        /* --- BUTTONS (ENHANCED) --- */
+        .btn-primary-custom {
+            background: var(--primary-green);
+            color: #000;
+            padding: 15px 40px;
+            border-radius: 50px; /* Modern rounded */
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 2px solid var(--primary-green);
+            box-shadow: 0 5px 20px rgba(140, 198, 63, 0.3);
+            transition: 0.4s;
+        }
+        .btn-primary-custom:hover {
+            background: transparent;
+            color: var(--primary-green);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(140, 198, 63, 0.5);
+        }
+
+        .btn-outline-custom {
+            background: transparent;
+            color: var(--text-white);
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 2px solid var(--text-white);
+        }
+        .btn-outline-custom:hover {
+            background: var(--text-white);
+            color: #000;
+        }
+
+        /* --- NAVBAR (FIXED & MOBILE READY) --- */
+        .navbar {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-family: var(--font-serif);
+            color: var(--text-white) !important;
+        }
+        .navbar-brand span { color: var(--primary-green); }
+        .nav-link {
+            color: #e0e0e0 !important;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin: 0 10px;
+            position: relative;
+        }
+        .nav-link:hover, .nav-link.active { color: var(--primary-green) !important; }
+        
+        /* Navbar Toggler Fix */
+        .navbar-toggler { border: 1px solid var(--primary-green); }
+        .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(140, 198, 63, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+        /* --- HERO SECTION --- */
+        .hero-section {
+            padding-top: 180px;
+            padding-bottom: 100px;
+            background: radial-gradient(circle at top right, rgba(140, 198, 63, 0.15), transparent 40%),
+                        url('https://www.transparenttextures.com/patterns/dark-matter.png');
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-title { font-size: 4.5rem; line-height: 1.1; margin-bottom: 30px; }
+        .hero-img-box { position: relative; z-index: 2; }
+        .hero-img { 
+            border-radius: 20px; 
+            box-shadow: 20px 20px 0px rgba(140, 198, 63, 0.2); 
+            transition: transform 0.5s;
+        }
+        .hero-img:hover { transform: scale(1.02); }
+
+        /* --- FLOATING DECORATION --- */
+        .leaf-float {
+            position: absolute;
+            width: 80px;
+            opacity: 0.6;
+            animation: floatAnim 4s ease-in-out infinite;
+        }
+        @keyframes floatAnim {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        /* --- CARDS & SERVICES --- */
+        .feature-card {
+            background: var(--bg-card);
+            padding: 40px 30px;
+            border-radius: 15px;
+            border: 1px solid #333;
+            transition: all 0.4s;
+            height: 100%;
+        }
+        .feature-card:hover {
+            border-color: var(--primary-green);
+            transform: translateY(-10px);
+            background: linear-gradient(145deg, #222, #1a1a1a);
+        }
+        .feature-icon { font-size: 3.5rem; color: var(--primary-green); margin-bottom: 25px; }
+
+        /* --- PACKAGES (PRICING) --- */
+        .package-card {
+            background: #151515;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid #333;
+            position: relative;
+            transition: 0.3s;
+        }
+        .package-card.featured {
+            border: 2px solid var(--primary-green);
+            transform: scale(1.05);
+            z-index: 5;
+            box-shadow: 0 0 30px rgba(140, 198, 63, 0.15);
+        }
+        .package-header { padding: 40px; background: #1f1f1f; text-align: center; }
+        .package-price { font-size: 3rem; font-weight: 700; color: var(--text-white); }
+        .package-price span { font-size: 1rem; color: #aaa; }
+        .package-body { padding: 40px; }
+        .list-check li { margin-bottom: 15px; display: flex; align-items: center; color: #ddd; }
+        .list-check i { color: var(--primary-green); margin-right: 15px; }
+
+        /* --- GALLERY GRID --- */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: 0.3s;
+        }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+
+        /* --- CONTACT FORM --- */
+        .form-control-custom {
+            background: #222;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .form-control-custom:focus {
+            background: #2a2a2a;
+            border-color: var(--primary-green);
+            box-shadow: none;
+            color: #fff;
+        }
+
+        /* --- FLOATING BUTTONS (FIXED MOBILE) --- */
+        .fab-wrapper {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 15px;
+        }
+        .fab-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: 0.3s;
+        }
+        .fab-wa { background: #25D366; }
+        .fab-top { background: var(--primary-green); display: none; } /* Hidden by default */
+        
+        /* --- MOBILE RESPONSIVE FIXES (CRITICAL) --- */
+        @media (max-width: 991px) {
+            .hero-section { padding-top: 140px; text-align: center; }
+            .hero-title { font-size: 3.2rem; }
+            .hero-img-box { margin-top: 50px; }
+            .package-card.featured { transform: scale(1); margin: 30px 0; }
+            .nav-link { margin: 10px 0; border-bottom: 1px solid #333; }
+        }
+
+        @media (max-width: 768px) {
+            /* Fix Horizontal Scroll & Layout */
+            body { overflow-x: hidden; width: 100%; }
+            .container { padding-left: 20px; padding-right: 20px; }
+            
+            .section-title { font-size: 2.2rem; }
+            .hero-title { font-size: 2.5rem; }
+            
+            /* Stack Buttons */
+            .d-flex.gap-3 { 
+                flex-direction: column; 
+                width: 100%; 
+            }
+            .btn-primary-custom, .btn-outline-custom { 
+                width: 100%; 
+                display: block; 
+                margin-bottom: 15px; 
+            }
+
+            /* Adjust FAB position so it doesn't block text */
+            .fab-wrapper { bottom: 15px; right: 15px; }
+            .fab-btn { width: 50px; height: 50px; font-size: 22px; }
+
+            /* Fix Brand Logos */
+            .brands-row { flex-wrap: wrap; justify-content: center; gap: 20px; }
+            .brand-item { width: 40%; margin-bottom: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">VEGAN<span>DIET</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Paket
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-lg" aria-labelledby="shopDropdown">
+                            <li><a class="dropdown-item py-2" href="paket1.html">Classic Victorian</a></li>
+                            <li><a class="dropdown-item py-2" href="paket2.html">Modern Minimalist</a></li>
+                            <li><a class="dropdown-item py-2" href="paket3.html">Luxury Penthouse</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="#contact" class="btn btn-primary-custom px-4 py-2" style="font-size: 0.8rem;">Hubungi Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <img src="https://cdn-icons-png.flaticon.com/128/706/706173.png" class="leaf-float" style="top: 15%; left: 5%;" alt="Leaf">
+        <img src="https://cdn-icons-png.flaticon.com/128/706/706173.png" class="leaf-float" style="bottom: 20%; right: 10%; animation-delay: 2s;" alt="Leaf">
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <span class="section-subtitle">#1 Plant Based Nutrition</span>
+                    <h1 class="hero-title">Revolusi Hidup Sehat <br> <span class="text-gradient">Vegan Lifestyle</span></h1>
+                    <p style="font-size: 1.1rem; max-width: 550px;">
+                        Temukan kekuatan alami dari 100% Minyak Zaitun Organik Extra Virgin. Diproses dengan teknik *Cold-Pressed* untuk menjaga kemurnian nutrisi, antioksidan, dan rasa yang otentik.
+                    </p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#packages" class="btn btn-primary-custom">Beli Paket Hemat</a>
+                        <a href="#about" class="btn btn-outline-custom">Pelajari Prosesnya</a>
+                    </div>
+                    <div class="row mt-5 border-top border-secondary pt-4">
+                        <div class="col-4">
+                            <h3 class="m-0 text-white">10k+</h3>
+                            <small class="text-secondary">Pelanggan</small>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="m-0 text-white">100%</h3>
+                            <small class="text-secondary">Organik</small>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="m-0 text-white">4.9</h3>
+                            <small class="text-secondary">Rating</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img-box">
+                    <img src="https://images.unsplash.com/photo-1474979266404-7cadd259c308?auto=format&fit=crop&w=800&q=80" 
+                         alt="Premium Olive Oil Bottle" 
+                         class="hero-img img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-darker border-bottom border-secondary">
+        <div class="container">
+            <div class="row text-center align-items-center opacity-50 brands-row">
+                <div class="col-md brand-item"><h4 class="m-0">ORGANIC.CO</h4></div>
+                <div class="col-md brand-item"><h4 class="m-0">GREENLIFE</h4></div>
+                <div class="col-md brand-item"><h4 class="m-0">VEGANISM</h4></div>
+                <div class="col-md brand-item"><h4 class="m-0">NATUREPURE</h4></div>
+                <div class="col-md brand-item"><h4 class="m-0">HEALTHYWAY</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1541449748-0387e74360e5?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow-lg" alt="Kebun Zaitun">
+                        <div class="position-absolute bottom-0 end-0 bg-success p-4 rounded-top-4 d-none d-md-block">
+                            <h2 class="text-black m-0">15 Tahun</h2>
+                            <p class="text-black m-0 fw-bold">Pengalaman</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <span class="section-subtitle">Tentang Kami</span>
+                    <h2 class="section-title">Dari Alam Langsung <br> Ke Meja Makan Anda</h2>
+                    <p>Kami percaya bahwa makanan adalah obat terbaik. Berdiri sejak 2010, Vegan Diet berdedikasi untuk menyediakan produk berbasis tanaman yang tidak hanya sehat tetapi juga lezat.</p>
+                    <p>Minyak zaitun kami dipanen dari pohon-pohon tua di perbukitan Mediterania, dipilih satu per satu dengan tangan untuk memastikan tidak ada buah yang rusak masuk ke penggilingan.</p>
+                    
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-success fs-3 me-3"></i>
+                                <div>
+                                    <h5 class="mb-1">Tanpa Pestisida</h5>
+                                    <small class="text-secondary">Murni penanaman organik</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-flask text-success fs-3 me-3"></i>
+                                <div>
+                                    <h5 class="mb-1">Teruji Klinis</h5>
+                                    <small class="text-secondary">Aman untuk konsumsi harian</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-subtitle">Layanan Kami</span>
+                <h2 class="section-title">Solusi Kesehatan Komprehensif</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-seedling feature-icon"></i>
+                        <h4>Produk Organik</h4>
+                        <p class="small">Semua produk kami bersertifikat organik internasional tanpa rekayasa genetik (Non-GMO).</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-shipping-fast feature-icon"></i>
+                        <h4>Pengiriman Kilat</h4>
+                        <p class="small">Layanan antar same-day untuk kota besar dan packing kayu aman untuk luar pulau.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-user-md feature-icon"></i>
+                        <h4>Konsultasi Ahli</h4>
+                        <p class="small">Tim nutrisionis kami siap membantu Anda menyusun menu diet yang tepat via WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-recycle feature-icon"></i>
+                        <h4>Eco Packaging</h4>
+                        <p class="small">Kami menggunakan kemasan yang dapat didaur ulang untuk menjaga kelestarian bumi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <span class="section-subtitle">Produk Unggulan</span>
+                    <h2 class="section-title">Gold Reserve <br> Extra Virgin Olive Oil</h2>
+                    <p class="lead text-white mb-4">"Cairan Emas" untuk kesehatan jantung Anda.</p>
+                    <p>Varian premium dengan tingkat keasaman (acidity) < 0.3%. Memiliki aroma rumput segar yang kuat dan rasa *fruity* yang kompleks. Sangat cocok untuk diminum langsung di pagi hari.</p>
+                    
+                    <ul class="list-unstyled mt-4 mb-5">
+                        <li class="mb-3 d-flex align-items-center"><i class="fas fa-star text-warning me-2"></i> Pemenang NYIOOC World Olive Oil Competition</li>
+                        <li class="mb-3 d-flex align-items-center"><i class="fas fa-heart text-danger me-2"></i> Tinggi Polifenol & Omega 9</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890" class="btn btn-primary-custom w-100">Pesan Sekarang - Rp 185.000</a>
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <img src="https://images.unsplash.com/photo-1620916297397-a4a5402a3c6c?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-3" alt="Detail Produk">
+                        </div>
+                        <div class="col-6 mt-5">
+                            <img src="https://images.unsplash.com/photo-1594411139417-64906f23d20a?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-3" alt="Penyajian">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-subtitle">Penawaran Spesial</span>
+                <h2 class="section-title">Pilih Paket Sehatmu</h2>
+                <p>Hemat hingga 30% dengan mengambil paket bundling.</p>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h4>Starter Pack</h4>
+                            <div class="package-price">150<span>rb</span></div>
+                        </div>
+                        <div class="package-body">
+                            <ul class="list-unstyled list-check">
+                                <li><i class="fas fa-check"></i> 1 Botol EVOO (250ml)</li>
+                                <li><i class="fas fa-check"></i> E-Book Resep Vegan</li>
+                                <li><i class="fas fa-times text-secondary"></i> Konsultasi Gratis</li>
+                                <li><i class="fas fa-times text-secondary"></i> Gratis Ongkir</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-custom w-100 mt-3">Pilih Paket</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card featured">
+                        <div class="bg-success text-center text-black fw-bold py-1">BEST SELLER</div>
+                        <div class="package-header">
+                            <h4 class="text-success">Healthy Habit</h4>
+                            <div class="package-price">280<span>rb</span></div>
+                        </div>
+                        <div class="package-body">
+                            <ul class="list-unstyled list-check">
+                                <li><i class="fas fa-check"></i> 2 Botol EVOO (250ml)</li>
+                                <li><i class="fas fa-check"></i> 1 Botol Pure Olive Oil (Goreng)</li>
+                                <li><i class="fas fa-check"></i> Panduan Diet 30 Hari</li>
+                                <li><i class="fas fa-check"></i> Konsultasi WA Gratis</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary-custom w-100 mt-3">Pilih Paket</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h4>Family Pack</h4>
+                            <div class="package-price">650<span>rb</span></div>
+                        </div>
+                        <div class="package-body">
+                            <ul class="list-unstyled list-check">
+                                <li><i class="fas fa-check"></i> 2 Botol Besar (500ml)</li>
+                                <li><i class="fas fa-check"></i> 2 Botol Pure Olive Oil</li>
+                                <li><i class="fas fa-check"></i> Merchandise Eksklusif</li>
+                                <li><i class="fas fa-check"></i> Gratis Ongkir Nasional</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-custom w-100 mt-3">Pilih Paket</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-subtitle">Galeri</span>
+                <h2 class="section-title">Aktivitas & Produk</h2>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4 col-6">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1506016986033-557c4422c1bf?auto=format&fit=crop&w=600&q=80" alt="Kebun">
+                        <div class="gallery-overlay"><i class="fas fa-search fs-2 text-white"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&w=600&q=80" alt="Makanan">
+                        <div class="gallery-overlay"><i class="fas fa-search fs-2 text-white"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=80" alt="Salad">
+                        <div class="gallery-overlay"><i class="fas fa-search fs-2 text-white"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1599423423927-9095627237df?auto=format&fit=crop&w=800&q=80" alt="Produksi">
+                        <div class="gallery-overlay"><i class="fas fa-search fs-2 text-white"></i></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2b?auto=format&fit=crop&w=800&q=80" alt="Serving">
+                        <div class="gallery-overlay"><i class="fas fa-search fs-2 text-white"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-subtitle">Apa Kata Mereka</span>
+                <h2 class="section-title">Testimoni Pelanggan</h2>
+            </div>
+            <div id="testiCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mb-4 border border-success p-1" width="100" alt="User">
+                                <p class="lead fst-italic">"Saya sudah mencoba berbagai merek olive oil, tapi Vegan Diet ini yang paling fresh. Rasanya tidak tengik dan sangat enak dicampur salad."</p>
+                                <h5 class="mt-4">Siti Aminah</h5>
+                                <small class="text-success">Ibu Rumah Tangga</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle mb-4 border border-success p-1" width="100" alt="User">
+                                <p class="lead fst-italic">"Sebagai Chef, kualitas bahan adalah nomor satu. Minyak ini memiliki profil rasa yang sangat baik untuk masakan western."</p>
+                                <h5 class="mt-4">Chef Junaedi</h5>
+                                <small class="text-success">Executive Chef</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testiCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testiCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="section-title">Pertanyaan Umum</h2>
+                    </div>
+                    <div class="accordion" id="accordionFAQ">
+                        <div class="accordion-item bg-dark border border-secondary text-white">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Apakah produk ini Halal?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Ya, produk kami 100% nabati dan telah tersertifikasi Halal MUI serta sertifikat organik internasional.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-dark border border-secondary text-white mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Bagaimana cara penyimpanan yang benar?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Simpan di suhu ruang, jauhkan dari sinar matahari langsung dan panas kompor. Tidak perlu disimpan di kulkas karena minyak akan membeku.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-dark border border-secondary text-white mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Apakah aman untuk ibu hamil?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Sangat aman, bahkan dianjurkan karena kandungan Omega 9 dan Vitamin E sangat baik untuk perkembangan janin.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-subtitle">Artikel</span>
+                <h2 class="section-title">Berita Kesehatan Terbaru</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-0 h-100">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" class="rounded-3 mb-3" alt="Blog 1">
+                        <div class="card-body p-0">
+                            <small class="text-success">22 Jan 2026</small>
+                            <h5 class="mt-2 text-white"><a href="#" class="text-white">5 Manfaat Olive Oil untuk Jantung</a></h5>
+                            <p class="small text-secondary">Studi menunjukkan konsumsi rutin dapat menurunkan risiko penyakit jantung...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-0 h-100">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" class="rounded-3 mb-3" alt="Blog 2">
+                        <div class="card-body p-0">
+                            <small class="text-success">20 Jan 2026</small>
+                            <h5 class="mt-2 text-white"><a href="#" class="text-white">Resep Salad Vegan Praktis</a></h5>
+                            <p class="small text-secondary">Cobalah resep mudah ini untuk makan siang yang sehat dan cepat...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-0 h-100">
+                        <img src="https://images.unsplash.com/photo-1598511726623-d21990428718?auto=format&fit=crop&w=600&q=80" class="rounded-3 mb-3" alt="Blog 3">
+                        <div class="card-body p-0">
+                            <small class="text-success">18 Jan 2026</small>
+                            <h5 class="mt-2 text-white"><a href="#" class="text-white">Tips Membedakan Minyak Asli</a></h5>
+                            <p class="small text-secondary">Jangan tertipu, ini cara membedakan Extra Virgin asli dan palsu...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <span class="section-subtitle">Hubungi Kami</span>
+                    <h2 class="section-title">Siap Memulai Hidup Sehat?</h2>
+                    <p class="mb-5">Jangan ragu untuk bertanya mengenai produk atau konsultasi diet. Tim kami akan merespon dalam 1x24 jam.</p>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="me-4"><i class="fas fa-map-marker-alt fs-3 text-success"></i></div>
+                        <div>
+                            <h5 class="mb-1">Lokasi Kantor</h5>
+                            <p class="m-0 text-secondary">Jl. Boulevard Raya No. 10, Jakarta Selatan</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="me-4"><i class="fas fa-envelope fs-3 text-success"></i></div>
+                        <div>
+                            <h5 class="mb-1">Email</h5>
+                            <p class="m-0 text-secondary">support@vegandiet.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="me-4"><i class="fas fa-phone-alt fs-3 text-success"></i></div>
+                        <div>
+                            <h5 class="mb-1">Telepon / WA</h5>
+                            <p class="m-0 text-secondary">+62 812 3456 7890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="p-4 bg-darker border border-secondary rounded-3">
+                        <h4 class="mb-4">Kirim Pesan</h4>
+                        <input type="text" class="form-control form-control-custom" placeholder="Nama Lengkap">
+                        <input type="email" class="form-control form-control-custom" placeholder="Alamat Email">
+                        <textarea rows="4" class="form-control form-control-custom" placeholder="Pesan Anda..."></textarea>
+                        <button class="btn btn-primary-custom w-100">Kirim Sekarang</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black pt-5 border-top border-secondary">
+        <div class="container pb-5">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="mb-3 text-white">VEGAN<span class="text-success">DIET</span>.</h3>
+                    <p class="text-secondary small">Kami berdedikasi untuk meningkatkan kualitas hidup masyarakat melalui produk makanan organik berkualitas tinggi dan edukasi pola hidup sehat.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Navigasi</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-secondary small">Beranda</a></li>
+                        <li class="mb-2"><a href="#about" class="text-secondary small">Tentang</a></li>
+                        <li class="mb-2"><a href="#products" class="text-secondary small">Produk</a></li>
+                        <li class="mb-2"><a href="#gallery" class="text-secondary small">Galeri</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Legalitas</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-secondary small">Kebijakan Privasi</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary small">Syarat & Ketentuan</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary small">Pengiriman</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="text-secondary small">Dapatkan promo eksklusif setiap bulan.</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Email Anda">
+                        <button class="btn btn-success">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3 border-top border-secondary">
+            <small class="text-secondary">&copy; 2026 Vegan Diet Official. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    <div class="fab-wrapper">
+        <a href="#" id="backToTop" class="fab-btn fab-top" title="Ke Atas">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <a href="https://wa.me/6281234567890" target="_blank" class="fab-btn fab-wa" title="Chat WA">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Scroll Effect Navbar
+        const navbar = document.querySelector('.navbar');
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.padding = '10px 0';
+                navbar.classList.add('shadow');
+            } else {
+                navbar.style.padding = '20px 0';
+                navbar.classList.remove('shadow');
+            }
+
+            // Back to top Logic
+            if (window.scrollY > 300) {
+                backToTopBtn.style.display = 'flex';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
